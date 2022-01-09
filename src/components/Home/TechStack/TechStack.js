@@ -1,8 +1,8 @@
 import React from "react";
-import { cloudSoftDesign, webServiceOnlyTwo, webServiceOthers } from "../../../data/serviceData.js";
-import "./Service.scss";
+import { cloudSoftDesign, webServiceOnlyTwo, webServiceOthers } from "../../../data/techStackData.js";
+import "./TechStack.scss";
 
-const Service = () => {
+const TechStack = () => {
   const ServiceBig = ({ service }) => {
     let colSize;
     if(service.width === "100%") colSize = "col-md-12"
@@ -11,12 +11,12 @@ const Service = () => {
     return (
       <div className={colSize}>
         <div
-          className={`service_inner_big rounded ${
+          className={`techStack_inner_big rounded ${
             !service.border && "transparent_border"
           }`}
         >
           {service.border}
-          <img className="service_icon_big" src={service.icon} alt="" />
+          <img className="techStack_icon_big" src={service.icon} alt="" />
           <div>
           <span>{service.title}</span>
           </div>
@@ -35,7 +35,7 @@ const Service = () => {
   //   );
   // };
   return (
-    <section className="service_section container_custom">
+    <section className="techStack_section container_custom">
       <div className="row">
         <div className="col-md-4">
           <div className="row">
@@ -64,4 +64,4 @@ const Service = () => {
   );
 };
 
-export default Service;
+export default TechStack;

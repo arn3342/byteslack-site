@@ -1,12 +1,12 @@
-import angularIcon from "../assets/icons/services_icons/angular.svg";
-import cloudDevIcon from "../assets/icons/services_icons/devops.svg";
-import laravelIcon from "../assets/icons/services_icons/laravel.svg";
-import nodeIcon from "../assets/icons/services_icons/nodejs.svg";
-import productDesignIcon from "../assets/icons/services_icons/product-design.svg";
-import reactIcon from "../assets/icons/services_icons/react.svg";
-import softArchitectureIcon from "../assets/icons/services_icons/sof-architecture.svg";
-import vueJSIcon from "../assets/icons/services_icons/vuejs.svg";
-import webDevIcon from "../assets/icons/services_icons/web-development.svg";
+import angularIcon from "../assets/icons/tech_stack_icons/angular.svg";
+import cloudDevIcon from "../assets/icons/tech_stack_icons/devops.svg";
+import laravelIcon from "../assets/icons/tech_stack_icons/laravel.svg";
+import nodeIcon from "../assets/icons/tech_stack_icons/nodejs.svg";
+import productDesignIcon from "../assets/icons/tech_stack_icons/product-design.svg";
+import reactIcon from "../assets/icons/tech_stack_icons/react.svg";
+import softArchitectureIcon from "../assets/icons/tech_stack_icons/sof-architecture.svg";
+import vueJSIcon from "../assets/icons/tech_stack_icons/vuejs.svg";
+import webDevIcon from "../assets/icons/tech_stack_icons/web-development.svg";
 
 
 const webServiceOnlyTwo = [

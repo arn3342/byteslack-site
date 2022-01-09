@@ -1,5 +1,5 @@
 import React from "react";
-import qualityImg from "../../../assets/icons/services_icons/web-development.svg";
+import qualityImg from "../../../assets/icons/tech_stack_icons/web-development.svg";
 import "./QualityDriven.scss";
 
 const qualityAll = [

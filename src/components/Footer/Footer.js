@@ -1,10 +1,10 @@
 import React from "react";
-import fbIcon from "../../../assets/icons/fb_icon.png";
-import instagramIcon from "../../../assets/icons/instagram_icon.png";
-import linkedinIcon from "../../../assets/icons/linkedin_icon.png";
-import twitterIcon from "../../../assets/icons/twitter_icon.png";
-import byteSlack from "../../../assets/logos/byteslack_logo.svg";
-import { contactAll, servicesKnowledgeAll } from "../../../data/footerData";
+import fbIcon from "../../assets/icons/fb_icon.png";
+import instagramIcon from "../../assets/icons/instagram_icon.png";
+import linkedinIcon from "../../assets/icons/linkedin_icon.png";
+import twitterIcon from "../../assets/icons/twitter_icon.png";
+import byteSlack from "../../assets/logos/byteslack_logo.svg";
+import { contactAll, servicesKnowledgeAll } from "../../data/footerData";
 import "./Footer.scss";
 
 

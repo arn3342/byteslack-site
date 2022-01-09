@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import blueListStyle from "../../../assets/icons/blue_list_style.svg";
 import doubleBox from "../../../assets/icons/doubleBox.svg";
 import doubleCircle from "../../../assets/icons/doubleCircle.svg";
@@ -41,7 +41,12 @@ const introServices = [
   },
 ];
 
-const Intro = () => {
+const Intro = ({ btnText }) => {
+  const [isHomeUrl, setIsHomeUrl] = useState(false);
+
+  useEffect(() => {
+    if(window.location.pathname === "/" ) setIsHomeUrl(true);
+  })
   const Service = ({ color, titleIcon, title, listStyle, services }) => {
     const titleStyle = color + ` ${color}_bottom_border`;
     return (
@@ -77,9 +82,7 @@ const Intro = () => {
                   company <br /> creating bespoke solutions for web, mobiles,
                   desktops, wearables, and TVs.
                 </p>
-                <button className="button button_margin">
-                  Estimate Project
-                </button>
+                <button className="button button_margin">{btnText}</button>
               </div>
             </div>
             <div className="col-md-5 px-0">
@@ -92,21 +95,22 @@ const Intro = () => {
             </div>
           </div>
         </div>
-
-        <div className="container_custom">
-          <div className="row">
-            {introServices.map((service) => (
-              <Service
-                key={service.title}
-                color={service.color}
-                titleIcon={service.titleIcon}
-                title={service.title}
-                listStyle={service.listStyle}
-                services={service.services}
-              />
-            ))}
+        {isHomeUrl && (
+          <div className="container_custom">
+            <div className="row">
+              {introServices.map((service) => (
+                <Service
+                  key={service.title}
+                  color={service.color}
+                  titleIcon={service.titleIcon}
+                  title={service.title}
+                  listStyle={service.listStyle}
+                  services={service.services}
+                />
+              ))}
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </section>
   );

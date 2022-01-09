@@ -99,8 +99,6 @@
         .testimonial_title {
           width: 100%;
           font-size: 10vw;
-          font-weight: 800;
-          color: $black;
         }
         .prev_next {
           width: 100%;
@@ -156,9 +154,6 @@
               }
             }
           }
-        }
-        .testimonial_wrapper::-webkit-scrollbar {
-          height: 0rem;
         }
       }
     }

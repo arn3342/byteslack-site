@@ -1,0 +1,89 @@
+$black: #202020;
+$blue: #0066ff;
+$blue_secondary: #000ee6;
+$green: #21a13d;
+$orange: #f65f28;
+$gray: #5d6475;
+$light_gray: #f8f8fb;
+
+.blue {
+  color: $blue;
+}
+
+.green {
+  color: $green;
+}
+
+.orange {
+  color: $orange;
+}
+
+.button {
+  color: white;
+  background-color: $blue;
+  border: none;
+  padding: 0.9rem 2.2rem;
+  border-radius: 2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  &:hover {
+    background-color: #039;
+  }
+}
+
+.container_custom {
+  width: 100%;
+  padding-right: 5rem;
+  padding-left: 5rem;
+  margin-right: auto;
+  margin-left: auto;
+  transition: all 0.5s ease;
+}
+
+/* ******************************* */
+/* ******** MEDIA QUERIES ******** */
+/* ******************************* */
+
+/* -------- xsm -------- */
+@media (max-width: 575.98px) {
+  .container_custom {
+    padding-right: 0.938rem;
+    padding-left: 0.938rem;
+    width: 95%;
+  }
+}
+/* -------- sm -------- */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .container_custom {
+    padding-right: 0.938rem;
+    padding-left: 0.938rem;
+    width: 33.75rem;
+  }
+}
+/* -------- md -------- */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .container_custom {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    width: 45rem;
+  }
+}
+/* -------- l -------- */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .container_custom {
+    width: 60rem;
+  }
+}
+/* -------- xl -------- */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .container_custom {
+    width: 70rem;
+  }
+}
+/* -------- xxl -------- */
+@media (min-width: 1400px) {
+  .container_custom {
+    width: 100%;
+  }
+}

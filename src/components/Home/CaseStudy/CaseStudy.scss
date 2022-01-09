@@ -1,0 +1,152 @@
+@import "../../../global/style.scss";
+
+.caseStudy_section {
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  .caseStudy_container {
+    .caseStudy_row {
+      max-width: 80rem;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 1rem;
+      padding: 3rem 1.5rem 4rem 1.5rem;
+      border-radius: 1rem;
+      transition: all 0.3s ease;
+      .caseStudy_row_img {
+        // margin-left: 10rem;
+      }
+      .caseStudy_row_texts {
+        margin-right: 5rem;
+        .cat_company_wrapper {
+          .category {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: $gray;
+            transition: all 0.3s ease;
+          }
+          .company {
+            font-weight: 600;
+            color: $gray;
+            text-align: right;
+            span {
+              background: $light_gray;
+              padding: 0.9rem 1.5rem;
+              border-radius: 2rem;
+            }
+          }
+        }
+        .title_details_wrapper {
+          margin-top: 2.8rem;
+          .title {
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            color: $black;
+            transition: all 0.3s ease;
+          }
+          .details {
+            color: $black;
+          }
+        }
+        .country_wrapper {
+          margin-top: 1.4rem;
+        }
+        .tech_wrapper {
+          margin-top: 0.4rem;
+        }
+        .countryTech_text {
+          font-size: 1rem;
+          font-weight: 800;
+        }
+
+        .details_text {
+          font-size: 1rem;
+          font-weight: 600;
+        }
+      }
+      &:hover {
+        background: $light_gray;
+        .caseStudy_row_texts {
+          .cat_company_wrapper {
+            .category {
+              color: $blue;
+            }
+          }
+          .title_details_wrapper {
+            .title {
+              color: $blue;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ******************************* */
+/* ******** MEDIA QUERIES ******** */
+/* ******************************* */
+
+/* -------- xsm -------- */
+@media (max-width: 575.98px) {
+  .caseStudy_section {
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    .caseStudy_container {
+      .caseStudy_row {
+        .caseStudy_row_texts {
+          margin-top: 2rem;
+          margin-right: 0;
+          .cat_company_wrapper {
+            .category {
+              font-size: 3.5vw;
+            }
+            .company {
+              font-size: 3vw;
+              span {
+                padding: 0.7rem 1.2rem;
+              }
+            }
+          }
+          .title_details_wrapper {
+            margin-top: 2rem;
+            .title {
+              font-size: 7vw;
+              font-weight: 800;
+            }
+          }
+        }
+        &:hover {
+          background: $light_gray;
+          .caseStudy_row_texts {
+            .cat_company_wrapper {
+              .category {
+                color: $blue;
+              }
+            }
+            .title_details_wrapper {
+              .title {
+                color: $blue;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* -------- sm -------- */
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+/* -------- md -------- */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+/* -------- l -------- */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+/* -------- xl -------- */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+}
+/* -------- xxl -------- */
+@media (min-width: 1400px) {
+}

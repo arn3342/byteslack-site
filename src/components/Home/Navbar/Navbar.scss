@@ -1,0 +1,102 @@
+@import "../../../global/style.scss";
+
+.navbar_container {
+  margin-top: 0.8rem;
+  width: 100%;
+  padding-right: 5rem;
+  padding-left: 5rem;
+  margin-right: auto;
+  margin-left: auto;
+  transition: all 0.5s ease;
+  .navbar_nav_custom {
+    a {
+      color: $black !important;
+      margin-left: 0.4rem !important;
+      margin-right: 0.4rem !important;
+      font-weight: 600;
+      cursor: pointer;
+      &:hover {
+        color: $blue !important;
+      }
+    }
+    .navbar_button {
+      color: white !important;
+      text-decoration: none;
+      margin-left: 0.8rem !important;
+      &:hover {
+        color: white !important;
+      }
+    }
+  }
+}
+
+/* ******************************* */
+/* ******** MEDIA QUERIES ******** */
+/* ******************************* */
+
+/* -------- xsm -------- */
+@media (max-width: 575.98px) {
+  .navbar_container {
+    padding-right: 0;
+    padding-left: 0;
+    width: 100%;
+    .navbar_nav_custom {
+      .navbar_button {
+        margin: 0.5rem 0 !important;
+      }
+    }
+  }
+}
+/* -------- sm -------- */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .navbar_container {
+    padding-right: 0;
+    padding-left: 0;
+    width: 33.75rem;
+    .navbar_nav_custom {
+      .navbar_button {
+        margin: 0.5rem 0 !important;
+      }
+    }
+  }
+}
+/* -------- md -------- */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .navbar_container {
+    padding-right: 0;
+    padding-left: 0;
+    width: 45rem;
+    .navbar_nav_custom {
+      .navbar_button {
+        margin: 0.5rem 0 !important;
+      }
+    }
+  }
+}
+/* -------- l -------- */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .navbar_container {
+    width: 65rem;
+    .navbar_nav_custom {
+      a {
+        margin-left: 0rem !important;
+        margin-right: 0rem !important;
+      }
+      .navbar_button {
+        margin-left: 0.4rem !important;
+      }
+    }
+  }
+}
+/* -------- xl -------- */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .navbar_container {
+    width: 70rem;
+  }
+}
+/* -------- xxl -------- */
+@media (min-width: 1400px) {
+  .navbar_container {
+    width: 100%;
+  }
+}

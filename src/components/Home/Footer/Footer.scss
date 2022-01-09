@@ -1,0 +1,168 @@
+@import "../../../global/style";
+
+.footer_heading {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: $black;
+}
+
+.footer_section {
+  padding-top: 5rem;
+  .footer_company {
+    .footer_logo {
+      max-width: 9.5rem;
+    }
+    .footer_socials {
+      display: flex;
+      justify-content: flex-start;
+      padding-top: 3.5rem;
+      padding-bottom: 0;
+      .footer_social_link {
+        margin-right: 1.5rem;
+      }
+    }
+  }
+  .footer_menu_col {
+    .footer_services_list {
+      font-size: 0.82rem;
+      font-weight: 500;
+      line-height: 1.7;
+      letter-spacing: 0;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      .footer_services_item {
+        margin: 0;
+        padding: 0;
+        a {
+          color: $black;
+          text-decoration: none;
+          &:hover {
+            color: $blue;
+          }
+        }
+      }
+    }
+  }
+  .footer_contact_row {
+    padding-top: 3.625rem;
+    padding-bottom: 6.25rem;
+    order: -1;
+    .footer_contact {
+      padding-bottom: 2rem;
+      .contact_form_mail {
+        font-size: 0.9rem;
+        font-weight: 700;
+        color: $black;
+
+        display: inline-flex;
+        align-items: center;
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .footer_awards {
+    max-width: 31.25rem;
+    padding-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    img {
+      margin-bottom: 0;
+    }
+  }
+  .footer_funding {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0;
+  }
+  .footer_bottom {
+    width: 100%;
+    border-top: 0.0625rem solid #e3e3e3;
+    .footer_copyrights,
+    .footer_links {
+      padding-top: 1.125rem;
+      padding-bottom: 1.125rem;
+      font-size: 0.75rem;
+      line-height: 1.333;
+    }
+    .footer_copyrights {
+      .footer_bottom_item_copyBefore {
+        font-size: 0.75rem;
+        line-height: 1.333;
+        &:before {
+          content: "";
+          margin: 0 1rem;
+          border-left: 0.0625rem solid #898989;
+        }
+      }
+    }
+    .footer_links {
+      text-align: right;
+      .footer_bottom_item,
+      .footer_bottom_item_linksBefore {
+        color: $black;
+        text-decoration: none;
+      }
+      .footer_bottom_item_linksBefore {
+        &:before {
+          content: "";
+          margin: 0 1rem;
+          border-left: 0.0625rem solid #898989;
+        }
+      }
+    }
+  }
+}
+
+/* ******************************* */
+/* ******** MEDIA QUERIES ******** */
+/* ******************************* */
+
+/* -------- xsm -------- */
+@media (max-width: 575.98px) {
+  .footer_section {
+    padding-top: 3rem;
+    .footer_company {
+      .footer_socials {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+      }
+    }
+    .footer_bottom {
+      .footer_copyrights,
+      .footer_links {
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+      }
+      .footer_copyrights {
+        text-align: center;
+      }
+      .footer_links {
+        text-align: center;
+      }
+    }
+  }
+}
+/* -------- sm -------- */
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+/* -------- md -------- */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+/* -------- l -------- */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+/* -------- xl -------- */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+}
+/* -------- xxl -------- */
+@media (min-width: 1400px) {
+}
